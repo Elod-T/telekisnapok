@@ -16,7 +16,7 @@ const EditClass: NextPage = () => {
   const { status } = useSession();
   const router = useRouter();
 
-  const { reward, isAnimating } = useReward("edit-reward", "confetti");
+  const { reward } = useReward("edit-reward", "confetti");
   const [_class, setClass] = useState<ClassWithContent>();
   const [classData, setClassData] = useState<ClassData>();
 
