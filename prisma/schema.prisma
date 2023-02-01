@@ -1,0 +1,60 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Election {
+  id        String   @id @default(uuid())
+  title     String   @unique
+  active    Boolean  @default(false)
+  createdAt DateTime @default(now())
+  startDate DateTime
+  endDate   DateTime
+  Classes   Class[]
+  Voters    Voter[]
+}
+
+model Class {
+  id            String      @id @default(uuid())
+  name          String         
+  Election      Election?   @relation(fields: [electionId], references: [id])
+  electionId    String?
+  Votes         Vote[]
+  Content       Content?
+
+  @@unique([name, electionId])
+}
+
+model Vote {
+  id        String   @id @default(uuid())
+  timeStamp DateTime @default(now())
+  class     Class    @relation(fields: [classId], references: [id])
+  classId   String
+}
+
+model Voter {
+  user       String   
+  Election   Election @relation(fields: [electionId], references: [id])
+  electionId String
+
+  @@unique([user, electionId])
+}
+
+model Content {
+  managers          String[]
+  candidateName     String
+  candidateImage    Bytes
+  adjective         String
+  shortIntroduction String
+  description       String
+  instagram         String   
+  class             Class    @relation(fields: [classId], references: [id])
+  classId           String   @unique
+}

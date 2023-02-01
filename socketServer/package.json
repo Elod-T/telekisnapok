@@ -1,0 +1,10 @@
+{
+  "name": "socketio_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "socket.io": "^4.5.3"
+  }
+}

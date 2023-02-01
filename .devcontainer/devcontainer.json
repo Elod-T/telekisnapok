@@ -1,0 +1,18 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-16",
+  "forwardPorts": [3000, 3001, 5555],
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "mgmcdermott.vscode-language-babel",
+    "aaron-bond.better-comments",
+    "ecmel.vscode-html-css",
+    "wix.vscode-import-cost",
+    "xyz.local-history",
+    "Prisma.prisma",
+    "SonarSource.sonarlint-vscode",
+    "bradlc.vscode-tailwindcss",
+    "moalamri.inline-fold"
+  ]
+}
