@@ -1,5 +1,6 @@
 import { SessionProvider } from "next-auth/react";
 import type { AppProps } from "next/app";
+import Clarity from "../components/clarity";
 import "../styles/tailwind.css";
 
 export default function App({
@@ -9,6 +10,7 @@ export default function App({
   return (
     <SessionProvider session={session}>
       <Component {...pageProps} />
+      <Clarity />
     </SessionProvider>
   );
 }
