@@ -53,15 +53,15 @@ const ClassContents: NextPage<ClassContentsProps> = ({
   return (
     <div className="w-screen bg-base-200 py-24">
       <div className="w-full md:w-2/3 mx-auto">
-        <h1 id="classes" className="text-3xl font-bold text-center my-10">
+        <h2 id="classes" className="text-3xl font-bold text-center my-10">
           Szavazz a kedvenc osztályodra!
-        </h1>
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-8 gap-y-4">
           {content.map((item, index) => (
             <div key={index} className="bg-base-200 px-10 py-4 rounded-lg">
-              <h2 className="text-2xl font-bold">
+              <h3 className="text-2xl font-bold">
                 {item.candidateName} és a {item.name}
-              </h2>
+              </h3>
               <p className="py-6">{item.description}</p>
               <button
                 className="btn btn-secondary mt-4 flex flex-row gap-2"

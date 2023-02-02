@@ -11,6 +11,11 @@ const Seo: NextPage<SeoProps> = ({ title, description }) => {
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content="https://telekisnapok.hu" />
+      <meta property="og:site_name" content={title} />
+
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, user-scalable=0"

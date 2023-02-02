@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.telekisnapok.hu
+
+# Sitemaps
+Sitemap: https://www.telekisnapok.hu/sitemap.xml
