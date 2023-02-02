@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "yarn prisma generate && next dev",
-    "build": "yarn prisma generate --data-proxy && next build",
+    "build": "yarn prisma generate --data-proxy && next build && next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -25,6 +25,7 @@
     "moment": "^2.29.4",
     "next": "13.0.6",
     "next-auth": "^4.18.0",
+    "next-sitemap": "^3.1.49",
     "react": "18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-confetti": "^6.1.0",
