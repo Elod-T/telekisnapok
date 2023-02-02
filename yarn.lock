@@ -2735,11 +2735,6 @@ react-tailwindcss-datepicker@^1.4.1:
   resolved "https://registry.yarnpkg.com/react-tailwindcss-datepicker/-/react-tailwindcss-datepicker-1.4.1.tgz#97e48f519a7b765ff91ba580d86cd0c8c9311c44"
   integrity sha512-qZogyzCzbadXA1n7twI5U/z8bCdN8AKugDn/FWCQIRyak0iN2ZcQ4P70kBFZDUXgAN15OMUvusrqPeCagk6Hsg==
 
-react-turnstile@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/react-turnstile/-/react-turnstile-1.0.6.tgz#c1106d084d005972cfd1aed27ef2d299889e2846"
-  integrity sha512-4HD11+b5eVswNvDPbTSBSFsCD/fTYiWaKui737Ze+8DSciZbqvXzk6ffmjJKXlVuOELqvzLw91BhUQLkS59vRw==
-
 react@18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
