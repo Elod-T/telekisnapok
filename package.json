@@ -4,8 +4,8 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "yarn prisma generate && next dev",
+    "build": "yarn prisma generate --data-proxy && next build",
     "start": "next start",
     "lint": "next lint"
   },
