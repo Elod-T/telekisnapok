@@ -31,7 +31,7 @@ export default async function handler(
     return;
   }
 
-  res.setHeader("Content-Type", "image/png");
+  res.setHeader("Content-Type", "image/webp");
   res.setHeader("Cache-Control", "max-age=31536000, immutable");
   res.status(200).send(content.candidateImage);
 }
