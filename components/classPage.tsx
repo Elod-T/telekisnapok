@@ -57,8 +57,8 @@ const ClassPage: NextPage<ClassPageProps> = ({ className, content, year }) => {
 
   return (
     <Layout
-      title={`${content.candidateName} és a ${className} | ${year}`}
-      description={`A ${className} oldala`}
+      title={`${content.candidateName} és a ${className} | Telekis Napok ${year}`}
+      description={content.description}
     >
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content text-center">

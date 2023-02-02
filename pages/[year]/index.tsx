@@ -72,7 +72,10 @@ const Home: NextPage<HomeProps> = ({ elections, year: propYear }) => {
     return <Loading />;
 
   return (
-    <Layout title={`Telekis Napok ${year}`} description="Telekis Napok 2022">
+    <Layout
+      title={`Telekis Napok ${year} | Székesfehérvári Teleki Blanka Gimnázium`}
+      description="A Telekis Napok egy éves iskolai rendezvény az izgalom és a versengés időszaka, mivel a végzős osztályok egy-egy jelöltje indul az iskola királya rangos címért."
+    >
       <Carousel candidateImages={candidateImages} />
 
       <Hero

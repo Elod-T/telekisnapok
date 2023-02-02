@@ -27,7 +27,7 @@ const Carousel: NextPage<CarouselProps> = ({ candidateImages }) => {
         >
           <img
             src={candidate.image}
-            alt={`${candidate.name} képe`}
+            alt={`${candidate.name} király-jelölt képe | Telekis Napok`}
             height="900px"
             style={{ height: "900px" }}
           />
